@@ -1,0 +1,20 @@
+@media screen and (max-width:600px){
+    header {
+        @include base_header_media600px;
+    }
+    #logo-show {
+        @include base_logo_media600px;
+    }    
+    header h1 {
+        @include base_header_h1_media600px;
+    }
+    header a {
+        @include base_header_a_media600px;
+    }
+    .show-grid {
+        @include base_grid_media600px;
+    }
+    footer {
+        @include base_footer_media600px;
+    }
+}

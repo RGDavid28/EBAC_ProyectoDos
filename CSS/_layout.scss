@@ -1,0 +1,113 @@
+body {
+    @include base_body;
+}
+
+body, .show-card, input, button {
+    @include main_font;
+}
+
+header {
+    @include base_header;
+}
+
+#logo-show {
+    @include base_logo;
+}    
+
+header h1, header a {
+    @include header_text;
+}
+
+.search-container {
+    @include base_search_container;
+}
+
+#show-search {
+    @include base_show_search;
+}
+
+#search-button {
+    @include base_search_button;
+}
+
+.show-grid {
+    @include base_grid;
+}
+
+.show-card {
+    @include base_card;
+}
+
+.show-card:hover {
+    transform: translateY(-5px);
+}
+
+.show-info {
+    @include base_info;
+}
+
+.show-id {
+    @include base_show_id;
+}
+
+hr {
+    @include base_hr;
+}
+
+.show-name {
+    font-size: 1.5em;
+    @include base_name;
+}
+
+.show-days {
+    @include base_show_days;
+}
+
+.show-day {
+    @include base_show_day;
+}
+
+
+.show-image-container, .cast-image-container {
+    @include base_image_container;
+}
+
+.show-image,.cast-image {
+    @include base_image;
+}
+
+footer {
+        @include dflex (flex,row,100%,10rem); 
+}
+/* Segemento CCS para moredata.html */
+
+.cast-grid {
+    @include base_grid;
+}
+
+.cast-card {
+    @include base_card;
+}
+
+.cast-card:hover {
+    transform: translateY(-5px);
+}
+
+.cast-info {
+    @include base_info;
+}
+
+.cast-nameT, .cast-characterT {
+    font-size: 1.2em;
+    font-wight: 900;
+    @include base_name;
+}
+
+.cast-name, .cast-character {
+    font-size: .8em;
+    @include base_name;
+}
+
+.message {
+    @include base_message;
+}

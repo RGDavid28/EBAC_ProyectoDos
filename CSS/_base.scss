@@ -1,0 +1,193 @@
+@mixin main_font {
+    font-family: "Rubink", sans-serif;
+}
+
+@mixin base_body {
+    font-family:"Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;    
+}
+
+@mixin base_header {
+    background-color: #00ffc8;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    gap:15%;
+    align-content: center;
+    justify-contents:center;
+    align-items: center;       
+}
+
+@mixin base_header_media600px {
+    flex-direction: column;
+}
+
+@mixin base_logo {
+    margin-left: 2%;
+    width: 180px;
+    height: auto;
+} 
+
+@mixin base_logo_media600px {
+        width: 100px;
+        height: 80px;
+}  
+
+@mixin header_text {    
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 10px;
+    font-wight: 600;
+    color: #088d13;
+    font-size: 40px;
+}
+
+@mixin base_header_h1_media600px {
+    font-size: 15px;
+}
+
+@mixin base_header_a_media600px {
+            font-size: 30px;
+}
+
+@mixin base_search_container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+@mixin base_show_search {    
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+@mixin base_search_button {
+    padding: 10px 20px;
+    background-color: #ffcb05;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-weight: 700;
+    color: white;
+}
+
+@mixin base_grid {        
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@mixin base_grid_media600px { 
+    display:flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+@mixin base_card {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px grba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.25s ease;
+    cursor: pointer;    
+}
+
+@mixin base_info {
+    display: flex;
+    flex-direction: column
+}
+
+@mixin base_show_id {    
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    background-color: #333;
+    width: 30%; 
+
+    font-size: .8em;
+    color: #2bbaba;
+    font-weight: 900;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+@mixin base_hr {
+    margin-left: 0;
+    border: 0;
+    height: 1.2px;
+    background-color: green;
+    width: 90%;
+}
+
+@mixin base_name {
+    color: #333;
+    margin: 0;
+    text-transform: capitalize;
+}    
+
+@mixin base_show_days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@mixin base_show_day {
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    background-color: #2bbaba;
+}
+
+@mixin base_image_container {
+    flex-shrink: 0;
+}
+
+@mixin base_image {    
+    width: 96px;
+    height: 96px;
+}
+
+@mixin dflex($display, $flex-direction,$width,$gap) {
+    display: $display;
+    flex-direction: $flex-direction;
+    width: $width;
+    gap:$gap;
+    align-items: center;
+    justify-items: center;
+    height: 60px;
+    padding: 2%;
+    box-sizing: border-box;
+    margin-left: 8%;
+}
+
+@mixin base_footer_media600px {
+    gap: 5rem;
+    font-size: 15px;
+    margin-left: 2%;
+}
+
+/* Segemento CCS para moredata.html */
+@mixin base_message {
+    width: 100%;
+    margin-left: 30%;
+    text-align: left;
+    font-size: 1.8em;
+    color: #612fec;    
+}

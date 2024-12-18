@@ -1,0 +1,241 @@
+/* Segemento CCS para moredata.html */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+body, .show-card, input, button {
+  font-family: "Rubink", sans-serif;
+}
+
+header {
+  background-color: #00ffc8;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 15%;
+  align-content: center;
+  justify-contents: center;
+  align-items: center;
+}
+
+#logo-show {
+  margin-left: 2%;
+  width: 180px;
+  height: auto;
+}
+
+header h1, header a {
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 10px;
+  font-wight: 600;
+  color: #088d13;
+  font-size: 40px;
+}
+
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#show-search {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #ffcb05;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  color: white;
+}
+
+.show-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.show-card {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 4px 8px grba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.show-card:hover {
+  transform: translateY(-5px);
+}
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-id {
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0;
+  background-color: #333;
+  width: 30%;
+  font-size: 0.8em;
+  color: #2bbaba;
+  font-weight: 900;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+hr {
+  margin-left: 0;
+  border: 0;
+  height: 1.2px;
+  background-color: green;
+  width: 90%;
+}
+
+.show-name {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.show-days {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.show-day {
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  background-color: #2bbaba;
+}
+
+.show-image-container, .cast-image-container {
+  flex-shrink: 0;
+}
+
+.show-image, .cast-image {
+  width: 96px;
+  height: 96px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10rem;
+  align-items: center;
+  justify-items: center;
+  height: 60px;
+  padding: 2%;
+  box-sizing: border-box;
+  margin-left: 8%;
+}
+
+/* Segemento CCS para moredata.html */
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cast-card {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 4px 8px grba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cast-nameT, .cast-characterT {
+  font-size: 1.2em;
+  font-wight: 900;
+  color: #333;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.cast-name, .cast-character {
+  font-size: 0.8em;
+  color: #333;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.message {
+  width: 100%;
+  margin-left: 30%;
+  text-align: left;
+  font-size: 1.8em;
+  color: #612fec;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  #logo-show {
+    width: 100px;
+    height: 80px;
+  }
+  header h1 {
+    font-size: 15px;
+  }
+  header a {
+    font-size: 30px;
+  }
+  .show-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+  footer {
+    gap: 5rem;
+    font-size: 15px;
+    margin-left: 2%;
+  }
+}/*# sourceMappingURL=main.css.map */
